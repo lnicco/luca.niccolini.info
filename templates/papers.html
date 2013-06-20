@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<header>
+<h3>Papers</h3>
+</header>
+
+{% for p in papers %}
+    <p>
+    <b>{{ p['title'] }}</b>.<br>
+    {{ p['authors'] }}.<br>
+    <i> {{ p['where'] }}</i> [{{ p['year'] }}]<br>
+
+    {% if p.has_key('abstract') %}
+        [<a target="_self" href="javascript:void($('#paper-abstract-{{ p['name'] }}').fadeToggle('slow'));">abstract</a>]
+    {% else %}
+        [abstract]
+    {% end %}
+
+    {% if p.has_key('document') %}
+        [<a href="{{ p['document'] }}">paper</a>]
+    {% else %}
+        [paper]
+    {% end %}
+
+    {% if p.has_key('slides') %}
+        [<a href="{{ p['slides'] }}">slides</a>]
+    {% else %}
+        [slides]
+    {% end %}
+
+    {% if p.has_key('slides-url') %}
+        [<a target="_self" href="javascript:void($('#paper-slides-{{ p['name'] }}').fadeToggle('slow'));">see slides</a>]
+    {% end %}
+
+    {% if p.has_key('abstract') %}
+        <div id="paper-abstract-{{ p['name'] }}" class="paper-abstract" onClick="javascript:$(this).fadeOut('slow');"><p>{{ p['abstract'] }}</p></div>
+    {% end %}
+
+    {% if p.has_key('slides-url') %}
+        <div id="paper-slides-{{ p['name'] }}" class="paper-slides" >
+            <p>
+                <iframe src="{{ p['slides-url'] }}"></iframe>
+            </p>
+        </div>
+    {% end %}
+
+    </p>
+{% end %}
+
+<header>
+<h3>Wordcloud</h3>
+</header>
+<p>
+    <img class="infographic" src="{{ static_url('img/infographics/papers_wordcloud.png') }}">
+</p>
+
+
+{% end %}
+

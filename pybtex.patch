@@ -1,0 +1,7 @@
+diff pybtex/kpathsea.py pybtex.1/kpathsea.py
+22c22,24
+< from subprocess import Popen, PIPE
+---
+> #### XXX: the subprocess module is restricted on Google App Engine environment.
+> ####      since we do not really need this function let's comment it out
+> #from subprocess import Popen, PIPE

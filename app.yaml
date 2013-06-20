@@ -1,0 +1,18 @@
+application: lucaniccolini
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: no
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+# handled by tornado
+#- url: /static/
+#  static_dir: static
+
+- url: /.*
+  script: main.py
+

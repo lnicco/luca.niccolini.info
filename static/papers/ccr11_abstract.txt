@@ -1,0 +1,9 @@
+We propose a hybrid multiprocessor architecture for energy-proportional web
+servers and datacenters, to achieve significant energy savings at the price of
+small increase in service delay.  The server consists of a subsystem with
+low-power cores, always on and serving user requests when load is low, and a
+high-performance subsystem, by default in sleep mode, woken up only when the
+load is high. Through experiments on a hardware prototype and an accurate
+timing and power model of the server we assess performance and achievable
+energy benefits and explore design guidelines for future energy-proportional
+systems.

@@ -1,0 +1,8 @@
+Live information on network behavior plays a fundamental role in network
+testbeds both for management purposes and for distributed applications
+debugging. During the demonstration we introduce the new PlanetLab Europe (PLE)
+packet-tracking infrastructure and show how users can easily and safely
+inspect their network experiments using a simple web interface. PlanetLab
+Europe sites can be augmented with network monitoring hardware used both for
+passive and active monitoring. Here we focus on passive monitoring by means of
+the CoMo opensource platform.

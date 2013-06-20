@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+{% if error_trace and error_trace != '' %}
+    <div class='error'>
+        <pre>
+            {{ error_trace }}
+        </pre>
+    </div>
+{% end %}
+
+<center><img src="{{ static_url('img/errors/' + str(status_code) + '.png') }}"></center>
+
+{% end %}

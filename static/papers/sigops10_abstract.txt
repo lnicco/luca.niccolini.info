@@ -1,0 +1,7 @@
+Reducing energy consumption in datacenters is key to building low cost
+datacenters. To address this challenge, we explore the potential of hybrid
+datacenter designs that mix low power platforms with high performance ones. We
+show how these designs can handle diverse workloads with different service
+level agreements in an energy efficient fashion. We evaluate the feasibility of
+our approach through experiments and then discuss the design challenges and
+options of hybrid datacenters.
