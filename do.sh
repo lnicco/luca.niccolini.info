@@ -18,7 +18,7 @@ fi
 
 if [[ "X${1}" == "Xupload" ]]; then
     # Remember to create Symlinks with GoogleAppEngineLauncher
-    appcfg.py update ./
+    appcfg.py --oauth2 update ./
 fi
 
 ## TODO: convert to a Makefile (?)
