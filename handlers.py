@@ -95,9 +95,6 @@ class PapersHandler(BaseHandler):
             paper['where'] = entries[k].fields['journal']
 
             if entries[k].fields.has_key('howpublished'):
-                import pprint 
-                pprint.pprint(entries[k].fields)
-
                 paper['slides-url'] = entries[k].fields['howpublished']
 
             # Get paper authors
