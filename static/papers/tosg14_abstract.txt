@@ -1,0 +1,16 @@
+The customer domain of the smart grid naturally blends with smart home and
+smart building systems, but typical proposed approaches are
+“distributor-centric” rather than “customer-centric,” undermining user
+acceptance, and are often poorly scalable. To solve this problem, we propose a
+detailed architecture and an implementation of a “last-meter” smart grid-the
+portion of the smart grid on customer premises-embedded in an
+internet-of-things (IoT) platform. Our approach has four aspects of novelty and
+advantages with respect to the state of the art: 
+1) seamless integration of smart grid with smart home applications in the same infrastructure; 
+2) data gathering from heterogeneous sensor communication protocols; 
+3) secure and customized data access; and 
+4) univocal sensor and actuator mapping to a common abstraction layer on which
+additional concurrent applications can be built. A demonstrator has been built
+and tested with purposely-developed ZigBee smart meters and gateways, a
+distributed IoT server, and a flexible user interface.
+
